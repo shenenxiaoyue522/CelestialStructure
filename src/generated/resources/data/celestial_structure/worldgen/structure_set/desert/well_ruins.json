@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 202552209,
+    "separation": 12,
+    "spacing": 21,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "celestial_structure:desert/well_ruins",
+      "weight": 1
+    }
+  ]
+}

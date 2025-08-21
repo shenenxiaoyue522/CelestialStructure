@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 202552207,
+    "separation": 9,
+    "spacing": 18,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "celestial_structure:cherry/swing_camp",
+      "weight": 1
+    }
+  ]
+}

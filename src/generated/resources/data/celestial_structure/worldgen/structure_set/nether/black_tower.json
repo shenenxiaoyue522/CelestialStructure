@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 202552212,
+    "separation": 13,
+    "spacing": 35,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "celestial_structure:nether/black_tower",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 202552205,
+    "separation": 10,
+    "spacing": 28,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "celestial_structure:taiga/church",
+      "weight": 1
+    }
+  ]
+}

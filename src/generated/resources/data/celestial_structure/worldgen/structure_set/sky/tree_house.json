@@ -1,0 +1,15 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 202552211,
+    "separation": 16,
+    "spacing": 38,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "celestial_structure:sky/tree_house",
+      "weight": 1
+    }
+  ]
+}
