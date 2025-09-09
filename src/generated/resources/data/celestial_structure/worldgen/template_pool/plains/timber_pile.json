@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "celestial_structure:plains/timber_pile/start_pool",
+        "location": "celestial_structure:plains/timber_pile",
         "processors": {
           "processors": []
         },

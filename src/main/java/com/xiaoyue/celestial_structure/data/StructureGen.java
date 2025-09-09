@@ -82,8 +82,8 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
             c.register(plains_timber_pile.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_FOREST), plains_timber_pile.startPool(c),
                     Optional.empty(), 5, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 65));
-            c.register(plains_cave_house.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_FOREST), plains_cave_house.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
+            c.register(plains_cave_house.structure(), new JigsawStructure(biomeSet(c, CSTagGen.GENERIC_PLAINS), plains_cave_house.startPool(c),
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-12)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 80));
             c.register(taiga_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA), taiga_tower.startPool(c),
                     Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
@@ -110,10 +110,10 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
                     Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 75));
             c.register(sky_tree_house.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_OVERWORLD), sky_tree_house.startPool(c),
-                    Optional.empty(), 8, UniformHeight.of(VerticalAnchor.absolute(180), VerticalAnchor.absolute(222)), false,
+                    Optional.empty(), 7, UniformHeight.of(VerticalAnchor.absolute(180), VerticalAnchor.absolute(222)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 85));
             c.register(nether_black_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.HAS_PILLAGER_OUTPOST), nether_black_tower.startPool(c),
-                    Optional.empty(), 8, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 75));
         });
         builder.add(Registries.STRUCTURE_SET, c -> {

@@ -28,7 +28,7 @@ public record StructureKey(ResourceLocation loc, ResourceKey<StructureTemplatePo
     }
 
     public String startId() {
-        return pool.location() + "/start_pool";
+        return pool.location().toString();
     }
 
     public Holder.Reference<StructureTemplatePool> startPool(BootstapContext<Structure> c) {

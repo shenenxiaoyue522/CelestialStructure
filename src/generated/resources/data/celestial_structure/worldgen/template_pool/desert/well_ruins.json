@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "celestial_structure:desert/well_ruins/start_pool",
+        "location": "celestial_structure:desert/well_ruins",
         "processors": {
           "processors": []
         },

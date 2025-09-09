@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "celestial_structure:nether/black_tower/start_pool",
+        "location": "celestial_structure:nether/black_tower",
         "processors": {
           "processors": []
         },

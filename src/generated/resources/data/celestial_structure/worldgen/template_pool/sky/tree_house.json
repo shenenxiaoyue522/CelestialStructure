@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:single_pool_element",
-        "location": "celestial_structure:sky/tree_house/start_pool",
+        "location": "celestial_structure:sky/tree_house",
         "processors": {
           "processors": []
         },
