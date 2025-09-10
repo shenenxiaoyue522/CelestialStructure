@@ -23,6 +23,7 @@ public class CSTagGen extends IntrinsicHolderTagsProvider<Biome> {
     public static final TagKey<Biome> IS_CHERRY = TagKey.create(Registries.BIOME, CelestialStructure.loc("generic/is_cherry"));
 
     public static final TagKey<Biome> GENERIC_PLAINS = TagKey.create(Registries.BIOME, CelestialStructure.loc("generic_plains"));
+    public static final TagKey<Biome> GENERIC_JUNGLE = TagKey.create(Registries.BIOME, CelestialStructure.loc("generic_jungle"));
 
     public CSTagGen(PackOutput output, CompletableFuture<HolderLookup.Provider> lookup, @Nullable ExistingFileHelper helper) {
         super(output, Registries.BIOME, lookup, b -> ForgeRegistries.BIOMES.getResourceKey(b).get(), MODID, helper);
@@ -33,5 +34,6 @@ public class CSTagGen extends IntrinsicHolderTagsProvider<Biome> {
         tag(IS_BIRCH).add(Biomes.BIRCH_FOREST, Biomes.OLD_GROWTH_BIRCH_FOREST);
         tag(IS_CHERRY).add(Biomes.CHERRY_GROVE);
         tag(GENERIC_PLAINS).addTag(BiomeTags.IS_FOREST).add(Biomes.PLAINS, Biomes.MEADOW);
+        tag(GENERIC_JUNGLE).add(Biomes.JUNGLE, Biomes.SPARSE_JUNGLE);
     }
 }

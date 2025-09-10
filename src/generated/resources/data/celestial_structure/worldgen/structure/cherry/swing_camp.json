@@ -6,9 +6,10 @@
   "size": 7,
   "spawn_overrides": {},
   "start_height": {
-    "absolute": 0
+    "absolute": -1
   },
   "start_pool": "celestial_structure:cherry/swing_camp",
   "step": "surface_structures",
+  "terrain_adaptation": "beard_thin",
   "use_expansion_hack": false
 }

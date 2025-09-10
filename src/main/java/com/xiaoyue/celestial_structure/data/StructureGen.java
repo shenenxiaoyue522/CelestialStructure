@@ -58,7 +58,7 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
 
     public static StructureKey jungle_tree_house = StructureKey.create("jungle/tree_house");
 
-    public static StructureKey sky_tree_house = StructureKey.create("sky/tree_house");
+    public static StructureKey sky_air_pavilion = StructureKey.create("sky/air_pavilion");
 
     public static StructureKey nether_black_tower = StructureKey.create("nether/black_tower");
 
@@ -75,7 +75,7 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
             Pools.register(c, desert_house_ruins.toString(), element(c, desert_house_ruins));
             Pools.register(c, desert_well_ruins.toString(), element(c, desert_well_ruins));
             Pools.register(c, jungle_tree_house.toString(), element(c, jungle_tree_house));
-            Pools.register(c, sky_tree_house.toString(), element(c, sky_tree_house));
+            Pools.register(c, sky_air_pavilion.toString(), element(c, sky_air_pavilion));
             Pools.register(c, nether_black_tower.toString(), element(c, nether_black_tower));
         });
         builder.add(Registries.STRUCTURE, c -> {
@@ -85,36 +85,36 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
             c.register(plains_cave_house.structure(), new JigsawStructure(biomeSet(c, CSTagGen.GENERIC_PLAINS), plains_cave_house.startPool(c),
                     Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-12)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 80));
-            c.register(taiga_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA), taiga_tower.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
+            c.register(taiga_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA, TerrainAdjustment.BEARD_THIN), taiga_tower.startPool(c),
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), true,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 80));
             c.register(taiga_ruined_camp.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA), taiga_ruined_camp.startPool(c),
                     Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 80));
-            c.register(taiga_church.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA), taiga_church.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
+            c.register(taiga_church.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_TAIGA, TerrainAdjustment.BEARD_THIN), taiga_church.startPool(c),
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), true,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 70));
             c.register(birch_white_fountain.structure(), new JigsawStructure(biomeSet(c, CSTagGen.IS_BIRCH), birch_white_fountain.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-2)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 60));
-            c.register(cherry_swing_camp.structure(), new JigsawStructure(biomeSet(c, CSTagGen.IS_CHERRY), cherry_swing_camp.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
+            c.register(cherry_swing_camp.structure(), new JigsawStructure(biomeSet(c, CSTagGen.IS_CHERRY, TerrainAdjustment.BEARD_THIN), cherry_swing_camp.startPool(c),
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 60));
             c.register(desert_house_ruins.structure(), new JigsawStructure(biomeSet(c, BiomeTags.HAS_DESERT_PYRAMID), desert_house_ruins.startPool(c),
                     Optional.empty(), 4, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 55));
             c.register(desert_well_ruins.structure(), new JigsawStructure(biomeSet(c, BiomeTags.HAS_DESERT_PYRAMID), desert_well_ruins.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 65));
-            c.register(jungle_tree_house.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_JUNGLE), jungle_tree_house.startPool(c),
+            c.register(jungle_tree_house.structure(), new JigsawStructure(biomeSet(c, CSTagGen.GENERIC_JUNGLE, TerrainAdjustment.BEARD_THIN), jungle_tree_house.startPool(c),
                     Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(0)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 75));
-            c.register(sky_tree_house.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_OVERWORLD), sky_tree_house.startPool(c),
+            c.register(sky_air_pavilion.structure(), new JigsawStructure(biomeSet(c, BiomeTags.IS_OVERWORLD), sky_air_pavilion.startPool(c),
                     Optional.empty(), 7, UniformHeight.of(VerticalAnchor.absolute(180), VerticalAnchor.absolute(222)), false,
                     Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 85));
-            c.register(nether_black_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.HAS_PILLAGER_OUTPOST), nether_black_tower.startPool(c),
-                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(-1)), false,
-                    Optional.of(Heightmap.Types.WORLD_SURFACE_WG), 75));
+            c.register(nether_black_tower.structure(), new JigsawStructure(biomeSet(c, BiomeTags.HAS_BASTION_REMNANT, TerrainAdjustment.BEARD_THIN), nether_black_tower.startPool(c),
+                    Optional.empty(), 7, ConstantHeight.of(VerticalAnchor.absolute(33)), false,
+                    Optional.empty(), 80));
         });
         builder.add(Registries.STRUCTURE_SET, c -> {
             c.register(plains_timber_pile.set(), new StructureSet(plains_timber_pile.setStr(c), new RandomSpreadStructurePlacement(
@@ -137,7 +137,7 @@ public class StructureGen extends DatapackBuiltinEntriesProvider {
                     21, 12, RandomSpreadType.TRIANGULAR, 202552209)));
             c.register(jungle_tree_house.set(), new StructureSet(jungle_tree_house.setStr(c), new RandomSpreadStructurePlacement(
                     26, 10, RandomSpreadType.TRIANGULAR, 202552210)));
-            c.register(sky_tree_house.set(), new StructureSet(sky_tree_house.setStr(c), new RandomSpreadStructurePlacement(
+            c.register(sky_air_pavilion.set(), new StructureSet(sky_air_pavilion.setStr(c), new RandomSpreadStructurePlacement(
                     38, 16, RandomSpreadType.TRIANGULAR, 202552211)));
             c.register(nether_black_tower.set(), new StructureSet(nether_black_tower.setStr(c), new RandomSpreadStructurePlacement(
                     35, 13, RandomSpreadType.TRIANGULAR, 202552212)));
